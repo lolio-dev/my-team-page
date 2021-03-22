@@ -1,0 +1,105 @@
+body{
+  padding-top: 110px;
+  padding-right: 240px;
+  padding-left: 240px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+
+  .header__title{
+    font-family: 'PT Serif', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    color: $primary-text-color;
+  }
+
+  .header__summary-container{
+    .header__summary-title{
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      text-transform: uppercase;
+
+      color: $primary-text-color;
+    }
+
+    .header__summary-content{
+      width: 439px;
+      height: 87px;
+
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+
+      color: $primary-text-color;
+    }
+  }
+}
+
+.gallery-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 27px 50px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+
+  margin-top: 96px;
+
+  .gallery_person{
+    margin-top: 27px;
+
+    .gallery__person-photo-role-container{
+      display: flex;
+
+      .gallery-section__person-photo{
+        width: 338px;
+        height: auto;
+      }
+
+      .gallery-section__person-role{
+        writing-mode: vertical-lr;
+        font-family: 'PT Serif', sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $primary-text-color;
+      }
+    }
+
+    .gallery-section__person-name{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: $primary-text-color;
+    }
+  }
+}
+
+.footer{
+  margin-top: 115px;
+  margin-bottom: 24px;
+
+  .footer__title{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: $secundary-text-color;
+  }
+}
